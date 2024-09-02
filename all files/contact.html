@@ -1,64 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-       
-    </style>
-</head>
-<body>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style></style>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-                <li><a href="novels.html">Novels</a></li>
-                <li><a href="flowers.html">Flowers</a></li>
-                <li><a href="beverages.html">Beverages</a></li>
-                <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
-            </ul>
-        </nav>
+      <h1>Welcome to Our Store</h1>
+      <h2>Find the Best Books, Flowers, and Cake&Co</h2>
+      <br />
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+          <li><a href="novels.html">Novels</a></li>
+          <li><a href="flowers.html">Flowers</a></li>
+          <li><a href="cake&co.html">Cake&Co</a></li>
+          <li>
+            <a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a>
+          </li>
+          <li>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section>
-            <h3>Contact Us</h3>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+      <section>
+        <h3>Contact Us</h3>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
 
-                <button type="submit">Send</button>
-            </form>
-            <div class="message" id="confirmation-message">
-                Thank you for your message! We will get back to you shortly.
-            </div>
-        </section>
+          <button type="submit">Send</button>
+        </form>
+        <div class="message" id="confirmation-message">
+          Thank you for your message! We will get back to you shortly.
+        </div>
+      </section>
     </main>
     <footer>
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>About Us</h3>
+          <p>
+            We offer a wide range of books, flowers, cakes & related items, selected to
+            provide the best quality and variety. Our mission is to make your
+            shopping experience enjoyable with excellent customer service.
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <p>
+            Email: <a href="mailto:info@yourstore.com">info@yourstore.com</a>
+          </p>
+          <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
         <p>&copy; 2024 Your Store. All rights reserved.</p>
+      </div>
     </footer>
 
     <script>
-        // JavaScript to handle form submission
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from submitting
+      // JavaScript to handle form submission
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the form from submitting
 
-            // Display the confirmation message
-            document.getElementById('confirmation-message').style.display = 'block';
+          // Display the confirmation message
+          document.getElementById("confirmation-message").style.display =
+            "block";
 
-            // Optionally, reset the form fields
-            document.getElementById('contact-form').reset();
+          // Optionally, reset the form fields
+          document.getElementById("contact-form").reset();
         });
     </script>
-</body>
+  </body>
 </html>

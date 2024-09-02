@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers</title>
+    <style>
+        
+        /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s ease;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 1em;
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    margin-bottom: 100px;
+    background: #f3a9b0;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+header h1, header h2 {
+    margin: 0.5em 0;
+    font-weight: normal;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header h2 {
+    font-size: 1.2em;
+    color: #ffd700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffd700;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+/* Main Content Area */
+main {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+        .offers {
+            text-align: center;
+        }
+
+        .offer-collection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 100px;
+            margin-bottom: 100px;
+        }
+
+        .offer-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+        }
+
+        .offer-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .offer-info {
+            padding: 15px;
+        }
+
+        .offer-info h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .offer-info p {
+            color: #666;
+        }
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 1em;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 1em;
+    color: #ffd700;
+}
+
+.footer-section p, .footer-section ul {
+    margin-bottom: 1em;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5em;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd700;
+}
+
+.footer-section .socials a {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.footer-section .socials a:hover {
+    color: #ffd700;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1em 0;
+    border-top: 1px solid #444;
+}
+
+        @media (max-width: 768px) {
+            .offer-collection {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Store</h1>
+        <h2>Find the Best Books, Flowers, and Cake&Co</h2>
+        <h2>Special Offers</h2><br>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="novels.html">Novels</a></li>
+                <li><a href="flowers.html">Flowers</a></li>
+                <li><a href="cake&co.html">Cake&Co</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="offers">
+            <h2>Current Promotions</h2>
+            <div class="offer-collection">
+                <div class="offer-card">
+                    <img src="https://imgs.search.brave.com/S-gjAPgxe-OYT3NojCw3fjhMmetKCgjIyEqX_zW2Lu8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9za3ls/aW5lcG9zdC5vcmcv/d3AtY29udGVudC91/cGxvYWRzLzIwMjMv/MDYvVHdpc3RlZC05/MDB4OTAwLmpwZWc" alt="Offer 1">
+                    <div class="offer-info">
+                        <h3>Buy 1 Get 1 Free</h3>
+                        <p>On Twisted Series Limited time only!</p>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="https://imgs.search.brave.com/ydUVzx_DzEirEcxYv_rnmOwgySlYCFD1Qp1yogZ7TVo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWdj/ZG4uZmxvd2VyYXVy/YS5jb20vYmx1ZS1v/cmNoaWRzLW4tcGlu/ZWFwcGxlLWNha2Ut/ZHVvLWZvci1tb20t/OTgxOTUyMGNvLUFf/Mi5qcGc" alt="Offer 2">
+                    <div class="offer-info">
+                        <h3>20% Off on Combo</h3>
+                        <p>Get 20% off on all bouquet+cake Order now!</p>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="https://wisebusinessplans.com/wp-content/uploads/2021/09/Services-overview-Coffee-club-sample-business-plan.jpg" alt="Offer 3">
+                    <div class="offer-info">
+                        <h3>Free Cake&CO Sample</h3>
+                        <p>Get a free sample with every purchase of Cake&Co. Enjoy!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <!-- Footer -->
+     <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We offer a wide range of books, flowers, cakes & related items, selected to provide the best quality and variety. Our mission is to make your shopping experience enjoyable with excellent customer service.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@yourstore.com</p>
+                <p>Phone: +123 456 7890</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Store. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

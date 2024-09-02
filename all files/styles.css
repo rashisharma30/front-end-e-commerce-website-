@@ -38,23 +38,16 @@ a {
 header {
     background: #f3a9b0;
     color: #fff;
-    padding: 1em;
+    padding: 1em 2em;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header h1, header h2 {
-    margin: 0.5em 0;
-    font-weight: normal;
-}
-
-header h1 {
-    font-size: 2em;
-}
-
-header h2 {
-    font-size: 1.2em;
-    color: #ffd700;
+header nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    background-color: #f3a9b0;
+    border-radius: 8px;
 }
 
 nav ul {
@@ -78,47 +71,53 @@ nav ul li a {
     display: flex;
     align-items: center;
     gap: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 4px;
 }
 
 nav ul li a:hover {
+    background-color: #ffd700;
+    color: #f3a9b0;
+}
+
+.header-content {
+    margin-top: 1em;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+    
+}
+
+header h2 {
+    font-size: 1.5em;
     color: #ffd700;
 }
-
-nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #ffd700;
-    transition: width 0.3s ease;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
-
 /* Hero Section */
+
 .hero {
-    background-image: url('https://imgcdn.floweraura.com/white-lily-n-glass-vase-9893230fl-A_0.jpg?tr=w-266,dpr-1.5,q-70');
+    
     background-size: cover;
     background-position: center;
-    color: white;
+    color: azure;
     text-align: center;
     padding: 100px 20px;
     opacity: 1; 
-    transform: translateY(0); 
+    transform: translateY(0);
+    border-radius: 5px; 
 }
 
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    color: #333;
 }
 
 .hero p {
     font-size: 20px;
     margin-bottom: 30px;
+    color: #333;
 }
 
 .hero .btn {
@@ -129,6 +128,7 @@ nav ul li a:hover::after {
     border-radius: 5px;
     cursor: pointer;
     margin: 10px;
+    
 }
 
 .hero .btn:hover {
@@ -529,6 +529,10 @@ section.visible {
     .container {
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;
+    }
+    .offer-collection {
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul {
