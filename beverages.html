@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beverages</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Store</h1>
+        <h2>Find the Best Books, Flowers, and Beverages</h2><br>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="novels.html">Novels</a></li>
+                <li><a href="flowers.html">Flowers</a></li>
+                <li><a href="beverages.html">Beverages</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="faq.html"><i class="fas fa-question-circle"></i> FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside id="filters">
+        <h3>Filter Beverages</h3>
+        <label for="beverage-cost"><i class="fas fa-dollar-sign"></i> Cost:</label>
+        <input type="number" id="beverage-cost" placeholder="Max Cost" oninput="applyFilters()">
+
+        <label for="beverage-category"><i class="fas fa-tags"></i> Category:</label>
+        <select id="beverage-category" onchange="applyFilters()">
+            <option value="">All</option>
+            <option value="hot drinks">Hot Drinks</option>
+            <option value="cake">Cake</option>
+            <option value="juice">Juice</option>
+            <option value="smoothie">Smoothie</option>
+            <!-- Add more categories here -->
+        </select>
+    </aside>
+
+    <main id="products"></main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We offer a wide range of books, flowers, and beverages, selected to provide the best quality and variety. Our mission is to make your shopping experience enjoyable with excellent customer service.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@yourstore.com</p>
+                <p>Phone: +123 456 7890</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="beverages.js"></script>
+</body>
+</html>

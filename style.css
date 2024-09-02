@@ -1,0 +1,262 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: #f3a9b0;
+    color: #fff;
+    padding: 1em 2em;
+    text-align: center;
+}
+
+header nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    background-color: #f3a9b0;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: #ffd700;
+    color: #f3a9b0;
+}
+
+.header-content {
+    margin-top: 1em;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+}
+
+header h2 {
+    font-size: 1.5em;
+    color: #ffd700;
+}
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    background: #f3a9b0;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
+
+.faq-item {
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.faq-question {
+    margin: 0;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-question::after {
+    content: '\002B'; /* Plus sign */
+    font-size: 1.5em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    content: '\2212'; /* Minus sign */
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
+    margin: 1em 0;
+}
+
+/* contact.html */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form button {
+    padding: 15px;
+    background-color: #f3a9b0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ffd700;
+    color: #f3a9b0;
+}
+.message {
+    display: none;
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #e0ffe0;
+    border: 1px solid #b2d8b2;
+    border-radius: 4px;
+    color: #333;
+}
+
+/* Mobile Styling */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+
+
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 1em;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 1em;
+    color: #ffd700;
+}
+
+.footer-section p, .footer-section ul {
+    margin-bottom: 1em;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5em;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd700;
+}
+
+.footer-section .socials a {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.footer-section .socials a:hover {
+    color: #ffd700;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1em 0;
+    border-top: 1px solid #444;
+}
